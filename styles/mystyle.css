@@ -49,8 +49,6 @@ a {
 
 
 
-
-
 /* Ships Parameters */
 .parameters-title {
 	position: absolute;
@@ -66,7 +64,6 @@ a {
 	position: absolute;
 	width: 388px;
 	height: 293px;
-/*	left: 330px;*/
 	top: 56px;
 
 background: #A9B4C2;
@@ -103,6 +100,11 @@ border-radius: 10px;
 	line-height: 28px;
 }
 
+p-1 {
+	margin-left: 100px;
+	margin-top: 240px;
+
+}
 
 
 /* Supplies Box */
@@ -131,6 +133,7 @@ border-radius: 10px;
 	font-size: 24px;
 	line-height: 28px;
 }
+
 
 /* Food bar */
 .foodBar {
@@ -186,8 +189,8 @@ border-radius: 10px;
 	align-items: center;
 	justify-content: center;
 	color: #0D1321;
-
 }
+
 
 /* Metrics Box 1 */
 .metrics-1 {
@@ -251,7 +254,7 @@ span {
 	margin-top: 35px;
 }
 
-p-1 {
+p-2 {
 	margin: 20px;
 	margin-top: 35px;
 }

@@ -8,10 +8,15 @@ var shipsParameters = {
 							currentSpeed: 100,
 };
 
+
 function accelerate(){
 							shipsParameters.currentSpeed += 10;
 							console.log(shipsParameters.currentSpeed);
 							document.getElementById("speed").innerHTML = shipsParameters.currentSpeed;
+							
+							shipsEnvironment.currentDistance += 564;
+							document.getElementById("currentDistance").innerHTML = shipsEnvironment.currentDistance;
+
 							}
 
 
@@ -25,40 +30,46 @@ function accelerate(){
 
  var shipsEnvironment = {
 							Gravity: '300',
-							Atmosphere: '',
-							currentDistance: 0,
+							Atmosphere: '0.088 psi',
+							currentDistance: 264554,
 
-							distance: function(){ 	
-							console.log ('km');
-							this.currentDistance += 500;
-						}
 };
 
 
 // Environment
 	document.getElementById("gravity").innerHTML = shipsEnvironment.Gravity;
 	document.getElementById("atmosphere").innerHTML = shipsEnvironment.Atmosphere;
-	document.getElementById("distance-travelled").innerHTML = shipsEnvironment.currentDistance;
+	
 
 
-// console.log(shipsEnvironment.currentDistance);
+//Distance counter
+distanceCounter();
+function distanceCounter(){
+	
+	setInterval(function(){
 
-// shipsEnvironment.distance();
+		shipsEnvironment.currentDistance += 100;
 
-// console.log(shipsEnvironment.currentDistance);
+		document.getElementById("currentDistance").innerHTML = shipsEnvironment.currentDistance;
+
+	}, 1000)
+
+}
 
 
 
 //SUPPLIES
 
 var supplies = {
-							Food: '70%',
-							Water: '96%'
+					Food: '70%',
+					Water: '96%'
 };
+
 
 // Supplies
 	document.getElementById("water").innerHTML = supplies.Food;
 	document.getElementById("food").innerHTML = supplies.Water;
+
 
 
 //FOOD BAR
@@ -68,7 +79,6 @@ class foodBar {
 		this.fillElem = element.querySelector('.foodBar-fill');
 
 		this.setValue(initialValue);
-
 
 	}
 	setValue(newValue){
@@ -96,13 +106,12 @@ new foodBar(document.querySelector('.foodBar'),96);
 
 
 //WATER BAR
-class waterBar {
+class waterBar{
 	constructor(element, initialValue = 0){
 		this.valueElem = element.querySelector('.waterBar-value');
 		this.fillElem = element.querySelector('.waterBar-fill');
 
 		this.setValue(initialValue);
-
 
 	}
 	setValue(newValue){
@@ -118,7 +127,7 @@ class waterBar {
 		this.update();
 	}
 	update(){
-		const percentage = this.value + '%'; //50%
+		const percentage = this.value + '%'; 
 
 		this.fillElem.style.width = percentage;
 		this.valueElem.textContent = percentage;
