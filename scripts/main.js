@@ -61,6 +61,74 @@ var supplies = {
 	document.getElementById("food").innerHTML = supplies.Water;
 
 
+//FOOD BAR
+class foodBar {
+	constructor(element, initialValue = 0){
+		this.valueElem = element.querySelector('.foodBar-value');
+		this.fillElem = element.querySelector('.foodBar-fill');
+
+		this.setValue(initialValue);
+
+
+	}
+	setValue(newValue){
+		if(newValue < 0) {
+			newValue = 0;
+		}
+
+		if(newValue > 100){
+			newValue = 100;
+		}
+
+		this.value = newValue;
+		this.update();
+	}
+	update(){
+		const percentage = this.value + '%'; //50%
+
+		this.fillElem.style.width = percentage;
+		this.valueElem.textContent = percentage;
+	}
+}
+
+new foodBar(document.querySelector('.foodBar'),96);
+
+
+
+//WATER BAR
+class waterBar {
+	constructor(element, initialValue = 0){
+		this.valueElem = element.querySelector('.waterBar-value');
+		this.fillElem = element.querySelector('.waterBar-fill');
+
+		this.setValue(initialValue);
+
+
+	}
+	setValue(newValue){
+		if(newValue < 0) {
+			newValue = 0;
+		}
+
+		if(newValue > 100){
+			newValue = 100;
+		}
+
+		this.value = newValue;
+		this.update();
+	}
+	update(){
+		const percentage = this.value + '%'; //50%
+
+		this.fillElem.style.width = percentage;
+		this.valueElem.textContent = percentage;
+	}
+}
+
+new waterBar(document.querySelector('.waterBar'),70);
+
+
+
 //METRICS
 
 function convert1(){
