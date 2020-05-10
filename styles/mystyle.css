@@ -104,6 +104,14 @@ border-radius: 10px;
 }
 
 
+img-1 {
+	float: left;
+}
+
+img-2 {
+	float: right;
+}
+
 /* Supplies Box */
 .supplies {
 	position: absolute;

@@ -52,10 +52,13 @@ function accelerate(){
 //SUPPLIES
 
 var supplies = {
-							Food: '',
-							Water: ''
+							Food: '70%',
+							Water: '96%'
 };
 
+// Supplies
+	document.getElementById("water").innerHTML = supplies.Food;
+	document.getElementById("food").innerHTML = supplies.Water;
 
 
 //METRICS
@@ -82,16 +85,6 @@ document.getElementById("convert2").innerHTML = "Result";
 
 
 
-
-
-
-
-
-
-
-// Supplies
-	document.getElementById("water").innerHTML = '70%';
-	document.getElementById("food").innerHTML = '96%';
 
 
 
