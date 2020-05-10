@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> Challenge 1 </title>
+	<script src="scripts/main.js" defer></script>
+	<link rel="stylesheet" type="text/css" href="styles/mystyle.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+	<h1>Interplanetary Transport System</h1>
+
+<div class="parameters-title"> 
+	<h2> Ships Parameters </h2>
+	<div class="parameters"> 
+		<br>
+		<p> Fuel: </p>
+		<p id="fuel"></p>
+		<br>
+		<p> Throttle: </p>
+		<p id="throttle"></p>
+			<br>
+		<p> Speed: </p>
+		<p id="speed"></p>
+
+		<div class = "positionButton1">
+			<a class="button" onclick= "accelerate()"> ACCELERATE</a>
+		</div>
+	</div>
+</div>
+
+
+<div class="environment-title"> 
+	<h2> Ships Environment </h2>
+	<div class="environment"> 
+		<br>
+		<p> Gravity: </p>
+		<p id="gravity"></p>
+		<br>
+		<p>Atmosphere:</p>
+		<p id="atmosphere"></p>
+	<br>
+		<p>Distance travelled:</p>
+		<p id="distance-travelled"></p>
+	</div>
+</div>
+
+
+<div class="supplies-title"> 
+	<h2> Supplies </h2>
+	<div class="supplies"> 
+			<br>
+		<p> Food </p>
+		<p id="food"></p>
+			<br>
+
+		<p> Water</p> 
+		<p id="water"></p>
+	
+	</div>
+</div>
+
+
+
+
+<div class="metrics-title"> 
+	<h2> Metrics </h2>
+	<div class="metrics-1"> 
+		<p> Gravity </p>
+			<div class="converter">
+				<input type="number" placeholder= "Input" id="myNumber1" value="0"> 
+				<span> = </span>
+				<p-1 id = "convert1"></p-1>
+			</div>
+
+			<div class = "positionButton2">
+				<a class="button" onclick="convert1()">CONVERT</a> 
+			</div>
+	</div>
+
+
+	<div class="metrics-2"> 
+		<p> Mars miles to Earth miles </p>
+		
+			<div class="converter">
+				<input type="number" placeholder= "Input" id="myNumber2" value="0">
+				<span>=</span>
+				<p-1 id = "convert2"></p-1>
+			</div>
+			
+			<div class = "positionButton2">
+				<a class="button" onclick="convert2()">CONVERT</a> 
+			</div>
+
+	</div>
+</div>
+
+
+
+
+<!-- <img src="smiley.gif" alt="Smiley face" width="42" height="42"> -->
+
+
+
+
+
+</body>
+
+
+
+
+</html>
+

@@ -1,0 +1,201 @@
+
+
+body {
+	background:#525767;
+	color: #EEF1EF;
+	font-family: 'Roboto', sans-serif;
+}
+
+
+h1 {
+	margin: 4%;
+	font-weight: 500;
+	font-size: 36px;
+	line-height: 42px;
+	text-align: center;
+}
+
+p {
+	margin: 20px;
+	display: inline-block;
+}
+
+
+a {
+	background-color: #0D1321;
+	font-size: 10px;
+  	color: #EEF1EF;
+  	padding: 9px 20px;
+  	border-radius: 5px;
+  	text-align: center;
+  	text-decoration: none;
+  	display: inline-block;
+}
+
+.positionButton1 {
+	margin-top: 40px;
+	position: fixed;
+	margin-left: 140px;
+
+}
+
+.positionButton2 {
+	position: fixed;
+	margin-top: 40px;
+	margin-left: 150px;
+
+}
+
+
+
+
+
+
+/* Ships Parameters */
+.parameters-title {
+	position: absolute;
+	width: 191px;
+	height: 28px;
+	left: 330px;
+	top: 225px;
+}
+
+
+/* Parameters Box */
+.parameters {
+	position: absolute;
+	width: 388px;
+	height: 293px;
+/*	left: 330px;*/
+	top: 56px;
+
+background: #A9B4C2;
+box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+border-radius: 10px;
+}
+
+
+
+/* Environments Box */
+.environment {
+	position: absolute;
+	width: 388px;
+	height: 293px;
+	left: 778px;
+	top: 280px;
+
+background: #A9B4C2;
+box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+border-radius: 10px;
+}
+
+
+/* Ships Environment */
+.environment-title h2 {
+	position: absolute;
+	width: 201px;
+	height: 28px;
+	left: 778px;
+	top: 225px;
+
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 28px;
+}
+
+
+/* Supplies Box */
+.supplies {
+	position: absolute;
+	width: 747px;
+	height: 179px;
+	left: 330px;
+	top: 668px;
+
+background: #A9B4C2;
+box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+border-radius: 10px;
+}
+
+
+/* Supplies */
+.supplies-title h2 {
+	position: absolute;
+	width: 93px;
+	height: 28px;
+	left: 330px;
+	top: 613px;
+
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 28px;
+}
+
+		
+
+/* Metrics Box 1 */
+.metrics-1 {
+	position: absolute;
+	width: 388px;
+	height: 247px;
+	left: 1219px;
+	top: 280px;
+
+background: #A9B4C2;
+box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+border-radius: 10px;
+
+}
+
+/* Metrics Box 2 */
+.metrics-2 {
+	position: absolute;
+	width: 388px;
+	height: 247px;
+	left: 1219px;
+	top: 600px;
+
+background: #A9B4C2;
+box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+border-radius: 10px;
+}
+
+
+/* Metrics */
+.metrics-title h2 {
+	position: absolute;
+	width: 82px;
+	height: 28px;
+	left: 1226px;
+	top: 225px;
+
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 28px;
+}
+
+
+.converter {
+	display: flex;
+}
+
+input {
+	margin: 30px;
+	height: 25px;
+	width: 100px;
+	text-align: center;
+
+}
+
+#myNumber1, #myNumber2 {
+	margin-left: 80px;
+}
+
+span {
+	margin-top: 35px;
+}
+
+p-1 {
+	margin: 20px;
+	margin-top: 35px;
+}
