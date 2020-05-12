@@ -2,10 +2,10 @@
 
 // PARAMETERS
 var shipsParameters = {
-							Fuel: '200',
+							Fuel: '2058960',
 							Throttle: 'Intact',
 							Speed: '17,500 miles/h',
-							currentSpeed: 100,
+							currentSpeed: 15.652,
 };
 
 
@@ -35,12 +35,9 @@ function accelerate(){
 
 };
 
-
-// Environment
 	document.getElementById("gravity").innerHTML = shipsEnvironment.Gravity;
 	document.getElementById("atmosphere").innerHTML = shipsEnvironment.Atmosphere;
 	
-
 
 //Distance counter
 distanceCounter();
@@ -66,10 +63,8 @@ var supplies = {
 };
 
 
-// Supplies
 	document.getElementById("water").innerHTML = supplies.Food;
 	document.getElementById("food").innerHTML = supplies.Water;
-
 
 
 //FOOD BAR
