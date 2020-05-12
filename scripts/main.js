@@ -29,7 +29,7 @@ function accelerate(){
 // ENVIRONMENT
 
  var shipsEnvironment = {
-							Gravity: '300',
+							Gravity: '3.7',
 							Atmosphere: '0.088 psi',
 							currentDistance: 264554,
 
@@ -89,7 +89,7 @@ class foodBar {
 		this.update();
 	}
 	update(){
-		const percentage = this.value + '%'; //50%
+		const percentage = this.value + '%'; 
 
 		this.fillElem.style.width = percentage;
 		this.valueElem.textContent = percentage;
