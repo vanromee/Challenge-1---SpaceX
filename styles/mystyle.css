@@ -141,6 +141,7 @@ border-radius: 10px;
 	height:30px;
 	border: 1px solid #EEF1EF;
 	margin-left: 20px;
+	border-radius: 5px;
 
 }
 
@@ -148,6 +149,7 @@ border-radius: 10px;
 	height: 100%;
 	background: #59ea63;
 	transition: width 0.5s;
+	border-radius: 5px;
 }
 
 .foodBar-value {
@@ -170,6 +172,7 @@ border-radius: 10px;
 	height:30px;
 	border: 1px solid #EEF1EF;
 	margin-left: 20px;
+	border-radius: 5px;
 
 }
 
@@ -177,6 +180,7 @@ border-radius: 10px;
 	height: 100%;
 	background: #6CBEED;
 	transition: width 0.5s;
+	border-radius: 5px;
 }
 
 .waterBar-value {
